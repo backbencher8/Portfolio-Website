@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-background: #171D29;
+    --form-width: 40%;
+
+    --transition-efffect: all 300ms ease-in;
+    --container-width-lg: 85%;
+    --container-width-md: 78%;
+    --form-width: 40%;
+
+
+    --card-border-radius: .8rem;
+    --card-border-radius-2: .4rem;
+    --card-border-radius-3: .2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: var(--color-gray);
+    overflow-x: hidden;
+    background-color: var(--color-background);
+    font-size: 0.9rem;
+    transition: var(--transition-efffect);
+}
+
+.container {
+    width: var(--container-width-lg);
+    max-width: 1880px;
+    margin: 0 auto;
+}
+
+nav {
+    box-shadow: 1px 1px 3px #414a64;
+}
+
+.inner-nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inner-nav-container .logo {
+    color: #e35431;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.inner-nav-container .nav-items {
+    width: 70%;
+    padding: 2rem 0;
+    height: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-items li {
+    width: 5rem;
+    text-align: center;
+}
+
+.nav-items li a {
+    color: #C2EEF6;
+}
+
+.nav-items li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(21, 211, 208);
+    transition: var(--transition-efffect);
+}
+
+button {
+    font-size: 1.8rem;
+    background-color: #FFFFFF;
+    display: none;
+}
+
+/* ======================= End of Navigation ================= */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 4rem;
+    padding: 1rem 3.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #f6f6f9;
+}
+
+#about {
+    width: 50%;
+    height: 20rem;
+    font-size: 1.8rem;
+    padding: 2rem;
+    border-left: 1px solid white;
+}
+
+.my-name {
+    color: #1dddff;
+}
+
+.about-img-holder {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-img-holder img {
+    border: 1px solid rgb(64, 49, 99);
+    width: 20rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: 1px 1px 5px #080B14;
+}
+
+/* ===================== End of About me section ===================== */
+.skills-section {
+    margin-top: 4rem;
+}
+
+.my-skills {
+    text-align: center;
+    color: #f6f6f6;
+    font-size: 2rem;
+}
+
+.skills-container {
+    padding: 3rem 0;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-IT {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.skills-Softskills {
+    width: 45%;
+}
+
+.skills-container p {
+    width: 100%;
+    padding: .8rem .5rem;
+    margin-top: .5rem;
+    border-radius: var(--card-border-radius-3);
+    background-color: #414a64;
+}
+
+.skills-page {
+    display: none;
+}
+
+/* =========================== End of Skills Section ===================== */
+
+.education-container img {
+    margin-top: 2rem;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px #414a64;
+}
+
+.education-container {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.edu-details {
+    width: 100%;
+    padding: 1rem 2rem;
+    position: absolute;
+    color: #f6f6f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 2rem;
+}
+
+.schooling {
+    width: 38%;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: .5rem;
+    margin-top: 3.5rem;
+}
+
+.institute {
+    border-bottom: 1px solid white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+
+.qualification {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.year {
+    font-weight: lighter;
+    line-height: 1rem;
+    font-size: .6rem;
+}
+
+.education-heading {
+    height: 2rem;
+}
+
+/* ==================================== End of Education section ========================= */
+.experience-section {
+    margin-top: 2rem;
+    margin-bottom: 15rem;
+}
+
+.experience-container {
+    padding: 2rem;
+    color: #f6f6f6;
+    font-size: 1.4rem;
+}
+
+.experience-container p {
+    margin: 0 0 0.8rem 0;
+    font-size: 1rem;
+}
+
+.horizantal-line {
+    background-color: white;
+    height: .2rem;
+    width: 100%;
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.vertical-lines {
+    background-color: rgb(254, 254, 254);
+    height: 2.5rem;
+    width: 1px;
+    margin: 1.2px;
+}
+
+.vertical-lines h3 {
+    width: 16rem;
+    position: relative;
+    top: 40px;
+    left: -105px;
+    font-size: 1rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vertical-lines p {
+    width: 15rem;
+    position: relative;
+    top: 45px;
+    left: -95px;
+    font-size: .8rem;
+    line-height: 1rem;
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ============================= End of Experience ====================== */
+.my-work-section {
+    margin: 1.8rem 0;
+}
+
+.my-work-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #f6f6f6;
+    margin-top: 2rem;
+}
+
+.my-work-container .work {
+    width: 30%;
+    padding: 1rem 2rem;
+    background-color: rgb(20, 20, 58);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: var(--card-border-radius);
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.my-work-container h4 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.my-work-container p {
+    font-size: .8rem;
+    margin: .8rem 0;
+}
+
+.logo-holder-div {
+    text-align: center;
+}
+
+.my-work-container #thermometer-logo {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#compass-logo {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.netflix-logo {
+    height: 4rem;
+    /* width: 50px; */
+    text-align: center;
+}
+
+.my-work-container a {
+    text-align: center;
+    color: #f6f6f6;
+    padding: .4rem;
+    border-radius: .3rem;
+    border: 1px solid white;
+}
+
+/* ==================================== End of My work ================================ */
+.contact-me-section {
+    margin: 1rem 0;
+    color: #f6f6f6;
+}
+
+.stay-connected {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.stay-connected h1 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.stay-connected a {
+    font-size: 2rem;
+    margin: 2rem;
+    color: white;
+}
+
+.footer {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+/* ==================================== End of Stay connected ================================ */
+
+/*================================ media queries starts ====================================== */
+@media only screen and (max-width:1075px) {
+    .edu-details {
+        width: 90%;
+        color: #f6f6f9;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+    .college {
+        margin-left: 20px;
+    }
+
+    .education-heading {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    .schooling {
+        /* background-color: rgb(209, 226, 109); */
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #about {
+        font-size: 1.7rem;
+    }
+
+    .my-work-section {
+        margin-top: 25rem;
+    }
+
+    .my-work-container {
+        margin-top: 0;
+    }
+
+    .my-work-container .work {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .horizantal-line {
+        transform: rotate(-90deg);
+        width: 52%;
+        position: relative;
+        top: 12rem;
+        left: -11rem;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .vertical-lines {
+        position: relative;
+    }
+
+    .vertical-lines h3 {
+        transform: rotate(90deg);
+        border-top: 0;
+        border-left: 1px solid rgb(255, 255, 255);
+        border-bottom: 0;
+        position: absolute;
+        top: 340px;
+        left: -324px;
+        width: 40rem;
+        background-color: rgb(13, 23, 68);
+    }
+
+    #hcjs {
+        left: -320px;
+    }
+
+    .vertical-lines p {
+        transform: rotate(90deg);
+        position: absolute;
+        top: 326px;
+        left: -360px;
+        width: 38rem;
+        padding: .1rem;
+    }
+
+    #hcjsp {
+        top: 335px;
+        left: -350px;
+    }
+
+    #opportunites {
+        left: -350px;
+        top: 335px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    .schooling {
+        padding: .3rem 1rem;
+    }
+
+    .my-work-container {
+        display: grid;
+        grid-template-columns: repeat(2fr);
+    }
+
+    .my-work-container .work {
+        width: 100%;
+    }
+
+    .my-work-container a {
+        margin: .4rem;
+    }
+
+    .logo-holder-div {
+        margin: .3rem;
+    }
+
+    /* ====================== responsive navigations bar ==================== */
+    nav button {
+        display: inline-block;
+        font-size: 1.5rem;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav #close_nav-btn {
+        display: none;
+    }
+
+    .inner-nav-container {
+        width: var(--container-width-md);
+        position: relative;
+    }
+
+    .inner-nav-container .nav-items {
+        width: 40%;
+        height: 60vh;
+        padding: 0;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        background-color: #1b2b4a;
+        display: none;
+    }
+
+    .nav-items li {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-items li:hover {
+        cursor: pointer;
+        border: 0;
+        background-color: rgb(83, 83, 139);
+        transition: var(--transition-efffect);
+    }
+}
+
+@media only screen and (max-width: 824px) {
+    #about {
+        font-size: 1.5rem;
+    }
+
+    .horizantal-line {
+        top: 9rem;
+        left: -13rem;
+    }
+
+    .vertical-lines h3 {
+        top: 339px;
+        left: -318px;
+    }
+
+    .vertical-lines p {
+        left: -348px;
+    }
+
+    #hcjsp {
+        left: -343px;
+    }
+
+    #opportunites {
+        left: -340px;
+    }
+
+    .institute {
+        font-size: 1rem;
+    }
+
+    .qualification {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+
+    .education-container {
+        height: 20rem;
+    }
+
+    .education-container img {
+        opacity: 0.4;
+        height: 100%;
+    }
+
+    .edu-details {
+        height: 60vh;
+    }
+
+    .schooling {
+        width: 100%;
+        justify-content: center;
+        border-radius: .3rem;
+    }
+
+    .college {
+        margin-left: 0;
+    }
+
+    .experience-section {
+        padding: 0;
+        margin: 1rem 0 0 0;
+    }
+
+    .horizantal-line {
+        position: static;
+        transform: rotate(0deg);
+        position: static;
+        transform: rotate(0deg);
+        width: 100%;
+        height: 120vh;
+        background-color: #171D29;
+        flex-direction: column;
+    }
+
+    .vertical-lines {
+        position: static;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+        height: inherit;
+        background-color: #0a1c41;
+        margin: 1rem 0;
+    }
+
+    .vertical-lines h3 {
+        width: 100%;
+        position: static;
+        transform: rotate(0deg);
+        border-left: 0;
+        border-bottom: 1px solid white;
+        margin-bottom: .5rem;
+        padding: 0;
+    }
+
+    .vertical-lines p {
+        width: 100%;
+        position: static;
+        transform: rotate(0deg);
+        padding: 0 .5rem;
+    }
+
+    .my-work-section {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .about-container {
+        padding: 1rem;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #about {
+        height: 35vh;
+        border: 0;
+        width: 80%;
+    }
+
+    .about-container img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 652px) {
+    .skills-page {
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .skills-section {
+        display: none;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-page .skills-container p {
+        background-color: #171D29;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 653px) {
+    .skills-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills-container p {
+        font-size: .5rem;
+        padding: .5rem .3rem;
+    }
+
+    #skills {
+        width: 100%;
+    }
+
+    #skills a {
+        color: white;
+        margin-bottom: 2px;
+        margin-left: 2px;
+    }
+
+    .skills-Softskills {
+        width: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .skills-page {
+        margin: 3rem 0 0 0;
+    }
+
+    .education-container {
+        margin-top: 1rem;
+        height: 75vh;
+    }
+
+    .my-work-container .work {
+        padding: .5rem;
+    }
+
+    .my-work-container h4 {
+        font-size: 1rem;
+    }
+
+    .my-work-container p {
+        font-size: .6rem;
+    }
+
+    .experience-section {
+        margin-top: 4rem;
+    }
+
+    .horizantal-line {
+        margin-top: 2rem;
+    }
+
+    .institute {
+        font-size: .8rem;
+    }
+
+    .qualification {
+        font-size: .4rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .schooling {
+        padding: .8rem .3rem;
+    }
+
+    .my-work-section {
+        margin: 3rem;
+    }
+
+    #about {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #about {
+        font-size: .99rem;
+    }
+
+    .skills-container {
+        padding: 0;
+    }
+
+    .skills-page {
+        margin: 0;
+    }
+
+    .edu-details {
+        height: 50vh;
+        padding: 3rem 0 0;
+    }
+
+    .institute {
+        font-size: .7rem;
+    }
+
+    .qualification {
+        font-size: .4rem;
+    }
+
+    .year {
+        font-size: .4rem;
+    }
+
+    .vertical-lines {
+        font-size: .5rem;
+        height: 35vh;
+        padding: .4rem;
+    }
+
+    .vertical-lines p {
+        font-size: .4rem;
+    }
+
+    .experience-container h1 {
+        font-size: .7rem;
+    }
+
+    .my-work-container h4 {
+        font-size: .7rem;
+    }
+
+    .my-work-container p {
+        font-size: .4rem;
+    }
+
+    .schooling {
+        margin: 1rem 0;
+    }
+
+
+}
